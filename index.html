@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayesian A/B Testing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header class="text-center py-4 bg-light">
+        <h1 class="logo-text">LumeLab</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta-section">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advantage">Main Advantage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#example">Usage Example</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-to-use">How to Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 text-center mb-4">Bayesian A/B Testing</h1>
+                    <p class="lead">Imagine you want to know if adding images to your WhatsApp marketing messages will make more people buy your products. A traditional A/B test would tell you something like: "There's a small chance this result happened by luck, so let's trust it." But it doesn't tell you, for example, what the real chance is that the new message format is better — and that can be confusing.</p>
+
+                    <p>Bayesian A/B testing works in a more natural way. It takes the test data and gives you answers like: "With the information we have, there's an 85% chance that messages with images perform better." This is much easier to understand and use for making decisions. Additionally, it also shows you the risk of making the wrong decision, and you can update the results as new data arrives — without having to wait until the end of the test.</p>
+
+                    <p>In summary, Bayesian testing thinks in a way that's more similar to ours: it calculates chances and helps you decide with more clarity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="bg-primary text-white p-5 rounded">
+                        <h3 class="h2 mb-3">Ready to Start Testing?</h3>
+                        <p class="lead mb-4">Stop guessing and start making data-driven decisions with confidence. Our Bayesian A/B Testing toolkit gives you the power to understand not just what works, but how confident you can be in your results.</p>
+                        <a href="https://github.com/dsandux/AB-Test-Toolkit" class="btn btn-light btn-lg" target="_blank" rel="noopener noreferrer">
+                            <strong>Access the Notebook Now</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Advantage Section -->
+        <section id="advantage" class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="h1 text-center mb-4">A Major Advantage</h2>
+                    <p>In Bayesian A/B testing, you don't need to define a fixed sample size before starting. Instead, you can define a decision criterion, such as:</p>
+
+                    <div class="alert alert-info">
+                        <p class="mb-2"><strong>"I want to have at least 95% chance that messages with images perform better."</strong></p>
+                        <small>(this is called probability of victory), or</small>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <p class="mb-2"><strong>"I'll only make a decision if the risk of choosing the wrong message format is less than 2%."</strong></p>
+                        <small>(this is called risk-based decision).</small>
+                    </div>
+
+                    <p>From there, you can collect data and update the results as they arrive. When your criterion is met — for example, the message format with images has a 95% chance of being better — you can stop the test and decide.</p>
+
+                    <p>So yes, you can run until you reach the desired confidence or risk level, without needing to fix a sample size beforehand. This avoids wasting time and users, and allows for faster decisions when the data is clear from early on.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Example Section -->
+        <section id="example" class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="h1 text-center mb-4">Usage Example</h2>
+                    <p>You have a WhatsApp number that you use to sell your products. An important part of your business is sending messages to customers (who asked to receive them) with current offers. So you call your team to discuss what the message will be like. One person says to make it text-only, that adding an image will only create work and won't make a difference. Meanwhile, another team member says that the image is essential because it stimulates the consumer to buy. Who's right?</p>
+
+                    <p>You decide to do an A/B test to find out and will create two message models: one with and one without images. You'll send them to different customers each week and note how many people viewed each message, and how many people clicked the buy link.</p>
+
+                    <p>In a "traditional" A/B test, you would have to define a minimum number of people who would need to view the message and run the test until you have that sample. But unlike traditional tests, you didn't define a fixed number of people to wait for. You were clear with your criterion:</p>
+
+                    <blockquote class="blockquote text-center bg-light p-4 rounded">
+                        <p class="mb-0">"I'll only end this test if messages with images have more than 90% chance of being better, and less than 1% chance of being worse. That's what will make me feel secure."</p>
+                    </blockquote>
+
+                    <p>The days pass. You keep track of the results. At some moments, the messages with images seem promising. At others, they seem almost the same as the text-only ones. But you stay firm with the criterion, without anxiety to decide too quickly — nor fear of acting too early.</p>
+
+                    <p>Until one morning, you open the panel and see: <strong>"Chance of messages with images being better: 95%. Expected loss risk: 0.8%."</strong></p>
+
+                    <p>You smile. The decision is clear. Not only did you find the message format that has the greatest chance of being better... you know how confident you can be in this (95%), and if you're wrong, the expected average loss is only 0.8%.</p>
+
+                    <p>I know — at first glance it might seem strange something like: "Why would I choose an A/B test that, instead of telling me for sure which message format is the best, only tells me which is probably the best?" And the answer is simple: no test can give you certainty. That's just an illusion.</p>
+
+                    <p>The difference is that the Bayesian test assumes this uncertainty in an honest and useful way: it shows you the real chances of being right, the risk of being wrong — and the size of the loss if that happens.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Use Section -->
+        <section id="how-to-use" class="mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="h1 text-center mb-4">How to Use</h2>
+                    <p>For this, I created a Python notebook. If you don't know what a Python notebook is, I advise you to learn. This goes beyond the scope of this project, and YouTube is full of tutorials much better than I would be able to create.</p>
+
+                    <p>But if you already know, what I can say is the following: you can use this code directly on your computer, or upload the notebook to a platform like Google Colab and start using this tool in your tests, today!</p>
+
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/dsandux/AB-Test-Toolkit" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Get Started with the Notebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Bayesian A/B Testing Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
