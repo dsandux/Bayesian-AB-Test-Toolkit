@@ -88,4 +88,4 @@ This project is designed to be simple to use.
 
 ## Open Source License
 
-This project is open source and available under the **GNU General Public License v3.0**. Feel free to use, modify, and distribute it. See the `!LICENSE` file for more details.
+This project is open source and available under the **GNU General Public License v3.0**. Feel free to use, modify, and distribute it. See the `LICENSE` file for more details.
