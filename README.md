@@ -75,7 +75,7 @@ This project is designed to be simple to use.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/dsandux/B-AB/
+    git clone https://github.com/dsandux/AB-Test-Toolkit
     ```
 2.  **Install libraries:** Make sure you have the required Python libraries installed: `pandas`, `numpy`, `scipy`, `matplotlib`, and `seaborn`.
 3.  **Prepare your data:**
