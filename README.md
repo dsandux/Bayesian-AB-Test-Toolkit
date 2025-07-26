@@ -6,7 +6,7 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-14637D?style=for-the-badge&logo=seaborn&logoColor=white)
 ![ipywidgets](https://img.shields.io/badge/ipywidgets-FFB000?style=for-the-badge&logo=jupyter&logoColor=white)
 
-# Interactive Bayesian A/B Test Toolkit 📊
+# Bayesian Bayesian A/B Test Toolkit 📊
 
 This repository contains a self-contained notebook that provides an end-to-end workflow for conducting a **Bayesian A/B test**. It guides you from uploading raw data to receiving an automated, risk-aware recommendation, all managed through an intuitive control panel. No need to modify any code to run your analysis.
 
